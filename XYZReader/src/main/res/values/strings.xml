@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">XYZ Reader</string>
+  <string name="thumbnail_desc">Thumbnail</string>
+  <string name="action_share">Share</string>
+  <string name="error_msg">Articles server is not available! Please try again later.</string>
+  <string name="error_msg_unknown">Unknown error occurred! Please try again later.</string>
+</resources>

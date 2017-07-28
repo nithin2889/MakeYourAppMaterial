@@ -1,0 +1,11 @@
+<resources>
+  <color name="photo_placeholder">#CCC</color>
+
+  <color name="colorPrimary">#FF00B0FF</color>
+  <color name="colorPrimaryDark">#FF0277BD</color>
+  <color name="colorAccent">#FFFFEA00</color>
+
+  <color name="material_gray_100">#F5F5F5</color>
+  <color name="material_gray_800">#FF18FFFF</color>
+  <color name="material_gray_transparent">#BE424242</color>
+</resources>
