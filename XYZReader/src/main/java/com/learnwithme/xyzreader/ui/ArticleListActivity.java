@@ -132,16 +132,15 @@ public class ArticleListActivity extends BaseActivity implements
 
     private void showErrorMessage() {
         String message = NetworkUtils.isNetworkConnected(this) ?
-                errorMessageUnknown :
-                errorMessage;
+                errorMessageUnknown : errorMessage;
 
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
     private void syncData() {
         dataManager
-                .refreshArticles()
-                .subscribe(getSyncObserver());
+            .refreshArticles()
+            .subscribe(getSyncObserver());
     }
 
     private void subscribeToDbStream() {

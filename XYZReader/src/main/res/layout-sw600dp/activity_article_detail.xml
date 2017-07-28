@@ -88,6 +88,7 @@
             android:paddingEnd="@dimen/card_left_and_right_padding"
             android:paddingStart="@dimen/card_left_and_right_padding"
             android:paddingTop="@dimen/card_top_and_bottom_padding"
+            android:fontFamily="sans-serif"
             android:textColor="@android:color/white" />
 
         <TextView
@@ -109,6 +110,7 @@
             android:layout_marginBottom="@dimen/card_top_and_bottom_padding"
             android:layout_marginEnd="@dimen/card_left_and_right_padding"
             android:layout_marginStart="@dimen/card_left_and_right_padding"
+            android:fontFamily="sans-serif"
             android:layout_marginTop="@dimen/card_top_and_bottom_padding" />
 
       </LinearLayout>

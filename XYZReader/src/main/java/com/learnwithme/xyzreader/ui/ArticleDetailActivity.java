@@ -191,10 +191,10 @@ public class ArticleDetailActivity extends BaseActivity implements
 
     private void loadArticle() {
         dataManager
-            .getSingleArticle(currentId)
-            .doOnSubscribe(disposable -> supportPostponeEnterTransition())
-            .doFinally(this::supportStartPostponedEnterTransition)
-            .subscribe(getSingleObserver());
+                .getSingleArticle(currentId)
+                .doOnSubscribe(disposable -> supportPostponeEnterTransition())
+                .doFinally(this::supportStartPostponedEnterTransition)
+                .subscribe(getSingleObserver());
     }
 
     private SingleObserver<Article> getSingleObserver() {

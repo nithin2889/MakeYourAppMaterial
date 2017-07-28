@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
-    android:duration="250"
-    android:transitionOrdering="sequential">
+    android:duration="350"
+    android:transitionOrdering="together">
 
-    <slide android:slideEdge="top">
+    <slide android:slideEdge="right">
         <targets>
             <target android:targetId="@id/details_app_bar" />
         </targets>
     </slide>
 
-    <slide android:slideEdge="bottom">
+    <slide android:slideEdge="left">
         <targets>
             <target android:targetId="@id/card_view" />
         </targets>

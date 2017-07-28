@@ -57,6 +57,7 @@
             style="?android:attr/textAppearanceLarge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
             android:paddingTop="@dimen/keyline_margin_horizontal"
             android:paddingStart="@dimen/keyline_margin_screen_edge"
             android:paddingEnd="@dimen/keyline_margin_screen_edge"/>
@@ -66,6 +67,7 @@
             style="?android:attr/textAppearanceSmall"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
             android:paddingBottom="@dimen/keyline_margin_horizontal"
             android:paddingStart="@dimen/keyline_margin_screen_edge"
             android:paddingEnd="@dimen/keyline_margin_screen_edge"/>
