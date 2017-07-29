@@ -33,7 +33,7 @@ public class StringUtils {
 
     public static String getFormattedDetailsSubtitle(String date, String author) {
 
-        return " by " + author + "\t\t\t\t\t\t\t\t\t\t\t\t\t\tpublished on: "
+        return " by " + author + " published on: "
                 + getFormattedDate(date);
     }
 

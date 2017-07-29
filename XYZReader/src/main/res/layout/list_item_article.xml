@@ -45,7 +45,7 @@
             android:paddingEnd="@dimen/card_left_and_right_padding"
             android:paddingStart="@dimen/card_left_and_right_padding"
             android:paddingTop="@dimen/card_supporting_text_top_padding"
-            tools:text="by Cory Doctorow.\npublished on: Nov 20, 2013 " />
+            tools:text="by Cory Doctorow.\n published on: Nov 20, 2013 " />
     </LinearLayout>
 
 </android.support.v7.widget.CardView>

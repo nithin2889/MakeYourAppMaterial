@@ -7,16 +7,11 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ShareCompat;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.NestedScrollView.OnScrollChangeListener;
 import android.support.v7.widget.Toolbar;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import butterknife.BindBool;
-import butterknife.BindView;
-import butterknife.ButterKnife;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -25,12 +20,14 @@ import com.learnwithme.xyzreader.data.DataManager;
 import com.learnwithme.xyzreader.data.model.Article;
 import com.learnwithme.xyzreader.utils.StringUtils;
 
+import javax.inject.Inject;
+
+import butterknife.BindBool;
+import butterknife.BindView;
+import butterknife.ButterKnife;
 import io.reactivex.SingleObserver;
 import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
-
-import javax.inject.Inject;
-
 import timber.log.Timber;
 
 @SuppressWarnings("ConstantConditions")
@@ -97,14 +94,13 @@ public class ArticleDetailActivity extends BaseActivity implements
 
         shareFab.setOnClickListener(v -> {
             String sharedText = articleBodyView.getText().toString();
-
             // Share first 100 chars of text
             // In the real app I would share some text preview + url to a full version
-            startActivity(
+            /*startActivity(
                     Intent.createChooser(ShareCompat.IntentBuilder.from(ArticleDetailActivity.this)
                             .setType("text/plain")
                             .setText(sharedText.substring(0, Math.min(sharedText.length(), 100)))
-                            .getIntent(), getString(R.string.action_share)));
+                            .getIntent(), getString(R.string.action_share)));*/
         });
 
         nestedScrollView.setOnScrollChangeListener(new OnScrollChangeListener() {
