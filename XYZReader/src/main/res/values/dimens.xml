@@ -19,6 +19,7 @@
   <!-- Components -->
   <!-- FAB -->
   <dimen name="fab_margin">16dp</dimen>
+  <dimen name="fab_padding">16dp</dimen>
 
   <!-- Cards -->
   <dimen name="card_primary_title_top_padding">24dp</dimen>
