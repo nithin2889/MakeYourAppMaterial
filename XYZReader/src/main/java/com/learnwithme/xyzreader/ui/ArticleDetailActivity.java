@@ -2,6 +2,7 @@ package com.learnwithme.xyzreader.ui;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
@@ -149,6 +150,8 @@ public class ArticleDetailActivity extends BaseActivity implements
         final float fadeSpeedModifier = 4;
 
         articleSubtitleView.setAlpha(nontransparentAlpha - percentage * fadeSpeedModifier);
+        articleSubtitleView.setTypeface(Typeface.createFromAsset(getResources().getAssets(),
+                "fonts/Rosario-Regular.ttf"));
     }
 
     void updateActivityLayout(Article article) {
@@ -166,12 +169,15 @@ public class ArticleDetailActivity extends BaseActivity implements
             } else {
                 articleTitleView.setText(title);
             }
-
             articleSubtitleView.setText(subtitle);
+            articleSubtitleView.setTypeface(Typeface.createFromAsset(getResources().getAssets(),
+                    "fonts/Rosario-Regular.ttf"));
         }
 
         String bookText = article.body();
         articleBodyView.setText(StringUtils.getFormattedBookText(bookText));
+        articleBodyView.setTypeface(Typeface.createFromAsset(getResources().getAssets(),
+                "fonts/Rosario-Regular.ttf"));
 
         Glide.clear(photoView);
         Glide.with(this)

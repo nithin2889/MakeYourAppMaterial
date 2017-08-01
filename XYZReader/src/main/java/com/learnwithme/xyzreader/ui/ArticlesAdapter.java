@@ -7,9 +7,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import butterknife.BindView;
-import butterknife.ButterKnife;
-
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.learnwithme.xyzreader.R;
@@ -18,6 +15,9 @@ import com.learnwithme.xyzreader.utils.StringUtils;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHolder> {
 
@@ -32,7 +32,6 @@ class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_item_article, parent, false);
-
         return new ViewHolder(view);
     }
 
@@ -77,7 +76,6 @@ class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHolder> {
         ViewHolder(View view) {
             super(view);
             ButterKnife.bind(this, view);
-
             itemView.setOnClickListener(this);
         }
 
@@ -95,6 +93,7 @@ class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHolder> {
             String author = article.author();
 
             titleView.setText(title);
+
             subtitleView.setText(StringUtils.getFormattedSubtitle(rawDate, author));
 
             String thumbnailUrl = article.thumb();

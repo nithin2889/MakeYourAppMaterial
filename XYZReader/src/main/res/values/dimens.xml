@@ -2,7 +2,7 @@
   <!-- Based on https://material.io/guidelines -->
 
   <!-- Elevation values -->
-  <dimen name="elevation_fab_pressed">12dp</dimen>
+    <dimen name="elevation_fab_pressed">6dp</dimen>
   <dimen name="elevation_card_picked_up">8dp</dimen>
   <dimen name="elevation_fab_resting">6dp</dimen>
   <dimen name="elevation_appbar">4dp</dimen>
