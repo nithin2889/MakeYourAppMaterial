@@ -7,18 +7,18 @@
             <objectAnimator
                 android:duration="@android:integer/config_longAnimTime"
                 android:propertyName="scaleX"
-                android:valueTo="1.250"
+                android:valueTo="1.100"
                 android:valueType="floatType" />
             <objectAnimator
                 android:duration="@android:integer/config_longAnimTime"
                 android:propertyName="scaleY"
-                android:valueTo="1.250"
+                android:valueTo="1.100"
                 android:valueType="floatType" />
             <objectAnimator
                 android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="translationZ"
-                android:valueFrom="8dp"
-                android:valueTo="12dp"
+                android:valueFrom="@dimen/elevation_fab_resting"
+                android:valueTo="@dimen/elevation_fab_pressed"
                 android:valueType="floatType" />
         </set>
     </item>
@@ -37,7 +37,7 @@
             <objectAnimator
                 android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="translationZ"
-                android:valueTo="1.0"
+                android:valueTo="0dp"
                 android:valueType="floatType" />
         </set>
     </item>

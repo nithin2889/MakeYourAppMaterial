@@ -47,13 +47,14 @@
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/share_fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
         android:layout_margin="@dimen/fab_margin"
         android:background="@drawable/ripples_on_touch"
         android:clickable="true"
         android:elevation="@dimen/elevation_fab_resting"
         android:src="@drawable/ic_share_white_24dp"
+        android:stateListAnimator="@animator/lift_on_touch"
         app:fabSize="normal"
         app:layout_anchor="@+id/details_app_bar"
         app:layout_anchorGravity="bottom|end"

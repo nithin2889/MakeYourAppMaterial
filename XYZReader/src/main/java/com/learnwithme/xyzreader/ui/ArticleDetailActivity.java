@@ -111,10 +111,8 @@ public class ArticleDetailActivity extends BaseActivity implements
                 boolean scrollingDirection = scrollY > oldScrollY;
 
                 if (scrollingDirection && shareFab.isShown()) {
-                    // shareFab.setVisibility(View.GONE);
                     shareFab.hide();
                 } else {
-                    // shareFab.setVisibility(View.VISIBLE);
                     shareFab.show();
                 }
             }
