@@ -6,12 +6,10 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v4.app.ShareCompat;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.NestedScrollView.OnScrollChangeListener;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -49,10 +47,8 @@ public class ArticleDetailActivity extends BaseActivity implements
     AppBarLayout detailsAppbar;
     @BindView(R.id.nested_scroll_view)
     NestedScrollView nestedScrollView;
-    /*@BindView(R.id.share_fab)
-    FloatingActionButton shareFab;*/
     @BindView(R.id.share_fab)
-    ImageButton shareFab;
+    FloatingActionButton shareFab;
     @BindView(R.id.photo)
     ImageView photoView;
     @BindView(R.id.article_title)
@@ -100,11 +96,11 @@ public class ArticleDetailActivity extends BaseActivity implements
             String sharedText = articleBodyView.getText().toString();
             // Share first 100 chars of text
             // In the real app I would share some text preview + url to a full version
-            startActivity(
+            /*startActivity(
                     Intent.createChooser(ShareCompat.IntentBuilder.from(ArticleDetailActivity.this)
                             .setType("text/plain")
                             .setText(sharedText.substring(0, Math.min(sharedText.length(), 100)))
-                            .getIntent(), getString(R.string.action_share)));
+                            .getIntent(), getString(R.string.action_share)));*/
         });
 
         nestedScrollView.setOnScrollChangeListener(new OnScrollChangeListener() {
@@ -114,11 +110,11 @@ public class ArticleDetailActivity extends BaseActivity implements
                 boolean scrollingDirection = scrollY > oldScrollY;
 
                 if (scrollingDirection && shareFab.isShown()) {
-                    shareFab.setVisibility(View.GONE);
-                    // shareFab.hide();
+                    // shareFab.setVisibility(View.GONE);
+                    shareFab.hide();
                 } else {
-                    shareFab.setVisibility(View.VISIBLE);
-                    // shareFab.show();
+                    // shareFab.setVisibility(View.VISIBLE);
+                    shareFab.show();
                 }
             }
         });
