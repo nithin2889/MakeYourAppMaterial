@@ -7,6 +7,7 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v4.app.ShareCompat;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v4.widget.NestedScrollView.OnScrollChangeListener;
 import android.support.v7.widget.Toolbar;
@@ -96,11 +97,11 @@ public class ArticleDetailActivity extends BaseActivity implements
             String sharedText = articleBodyView.getText().toString();
             // Share first 100 chars of text
             // In the real app I would share some text preview + url to a full version
-            /*startActivity(
+            startActivity(
                     Intent.createChooser(ShareCompat.IntentBuilder.from(ArticleDetailActivity.this)
                             .setType("text/plain")
                             .setText(sharedText.substring(0, Math.min(sharedText.length(), 100)))
-                            .getIntent(), getString(R.string.action_share)));*/
+                            .getIntent(), getString(R.string.action_share)));
         });
 
         nestedScrollView.setOnScrollChangeListener(new OnScrollChangeListener() {
