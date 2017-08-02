@@ -1,5 +1,6 @@
 package com.learnwithme.xyzreader.ui;
 
+import android.content.res.Resources;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import timber.log.Timber;
 
 class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHolder> {
 
@@ -32,6 +34,7 @@ class ArticlesAdapter extends RecyclerView.Adapter<ArticlesAdapter.ViewHolder> {
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.list_item_article, parent, false);
+        Timber.d("FONT", Resources.getSystem().getAssets());
         return new ViewHolder(view);
     }
 

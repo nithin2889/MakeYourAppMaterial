@@ -5,40 +5,38 @@
         android:state_pressed="true">
         <set>
             <objectAnimator
-                android:duration="@android:integer/config_longAnimTime"
+                android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="scaleX"
                 android:valueTo="1.10"
                 android:valueType="floatType" />
             <objectAnimator
-                android:duration="@android:integer/config_longAnimTime"
+                android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="scaleY"
                 android:valueTo="1.10"
                 android:valueType="floatType" />
             <objectAnimator
                 android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="translationZ"
-                android:valueFrom="@dimen/elevation_fab_resting"
-                android:valueTo="@dimen/elevation_fab_pressed"
+                android:valueTo="6dp"
                 android:valueType="floatType" />
         </set>
     </item>
     <item>
         <set>
             <objectAnimator
-                android:duration="@android:integer/config_longAnimTime"
+                android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="scaleX"
                 android:valueTo="1.0"
                 android:valueType="floatType" />
             <objectAnimator
-                android:duration="@android:integer/config_longAnimTime"
+                android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="scaleY"
                 android:valueTo="1.0"
                 android:valueType="floatType" />
             <objectAnimator
                 android:duration="@android:integer/config_shortAnimTime"
                 android:propertyName="translationZ"
-                android:valueFrom="@dimen/elevation_fab_pressed"
-                android:valueTo="@dimen/elevation_fab_resting"
+                android:valueTo="6dp"
                 android:valueType="floatType" />
         </set>
     </item>

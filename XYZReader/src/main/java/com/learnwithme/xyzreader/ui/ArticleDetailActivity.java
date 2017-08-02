@@ -96,6 +96,7 @@ public class ArticleDetailActivity extends BaseActivity implements
 
         shareFab.setOnClickListener(v -> {
             String sharedText = articleBodyView.getText().toString();
+
             // Share first 100 chars of text
             // In the real app I would share some text preview + url to a full version
             startActivity(
